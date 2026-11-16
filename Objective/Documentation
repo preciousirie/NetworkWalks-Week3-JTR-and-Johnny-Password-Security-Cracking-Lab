@@ -1,1 +1,17 @@
+# Project Documentation
+## Week 3 – Project Module 2: Password Cracking with JTR and Johnny
 
+### 1. Project Background
+
+Password protection is an important security measure used to restrict access to files and sensitive information. However, the strength of a password plays a significant role in determining how effectively that protection can resist password-recovery attempts.
+
+As part of the Network Walks Cybersecurity Internship, Batch B084, this project explores password recovery using **John the Ripper (JTR)** and **Johnny** in a Windows environment.
+
+The practical exercise involved an instructor-provided password-protected ZIP archive. The assigned tools were used within the scope of the exercise, and the recovered password was subsequently verified against the supplied archive.
+
+This project provided practical exposure to password-security concepts, password-recovery tools, result verification, and technical evidence collection.
+
+**Project environment:** Windows OS  
+**Tools:** John the Ripper (JTR) and Johnny  
+**Target:** Instructor-provided password-protected ZIP archive  
+**Purpose:** Authorized cybersecurity training and password-security education
