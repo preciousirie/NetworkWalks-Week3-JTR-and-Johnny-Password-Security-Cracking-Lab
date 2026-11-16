@@ -15,3 +15,143 @@ This project provided practical exposure to password-security concepts, password
 **Tools:** John the Ripper (JTR) and Johnny  
 **Target:** Instructor-provided password-protected ZIP archive  
 **Purpose:** Authorized cybersecurity training and password-security education
+
+### 2. Tools and Windows Environment
+
+The project was conducted on a Windows 11 environment using John the Ripper and its graphical interface, Johnny.
+
+#### 2.1 Operating Environment
+
+| Component | Details |
+|---|---|
+| Operating System | Windows 11 |
+| John the Ripper | Version 1.9.0 |
+| Johnny | Version 2.2 |
+| Target File | Instructor-provided password-protected ZIP archive |
+
+#### 2.2 Tools Used
+
+**John the Ripper (JTR) — v1.9.0**
+
+John the Ripper is an open-source password security auditing and recovery tool. It supports different password-hash formats and provides functionality for evaluating password strength through authorized testing.
+
+**Johnny — v2.2**
+
+Johnny is a graphical user interface for John the Ripper. It provides a visual way to interact with supported John the Ripper operations, making the tool more accessible to users who prefer a graphical workflow.
+
+#### 2.3 Role of Each Tool
+
+John the Ripper served as the underlying password-recovery engine, while Johnny provided the graphical interface used during the exercise.
+
+Together, the tools supported the authorized password-recovery assignment involving the instructor-provided ZIP archive.
+
+### 3. Technical Concepts
+
+Understanding password protection, hash extraction, and password recovery is important when working with password-auditing tools.
+
+#### 3.1 Password-Protected ZIP Archives
+
+ZIP archives can use password-based encryption to restrict access to their contents. The correct password is required to decrypt and access protected files.
+
+In this project, an instructor-provided password-protected ZIP archive served as the authorized test file.
+
+#### 3.2 Hash Extraction
+
+Before using John the Ripper, a hash-extraction service was used to extract the password-verification data associated with the protected ZIP archive.
+
+This extracted hash served as the input for the subsequent password-recovery exercise.
+
+Hash extraction and password recovery are separate stages: extraction obtains the verification data, while the recovery tool uses that data to test password candidates.
+
+#### 3.3 Understanding Hashes and Encryption
+
+It is important to distinguish between hashing and encryption:
+
+- **Encryption** transforms information into a protected form using an encryption key. The information can be decrypted with the appropriate key.
+- **Hashing** produces a digest or verification value from input data. It is generally designed as a one-way process rather than a reversible transformation.
+
+For password-protected archives, the extracted verification data and the archive's encryption method determine how password-recovery tools can process the file.
+
+#### 3.4 John the Ripper and Johnny
+
+**John the Ripper (JTR)** is an open-source password-auditing and recovery tool that provides the underlying processing engine.
+
+**Johnny** is a graphical user interface for John the Ripper. It provides a visual environment for interacting with supported JTR operations.
+
+In this project, Johnny's graphical interface was used for the password-recovery stage. Windows Command Prompt was not used.
+
+#### 3.5 Password Recovery and Verification
+
+After the hash was extracted, Johnny was used to perform the authorized password-recovery exercise.
+
+The recovery process identified a password candidate that was subsequently tested against the original instructor-provided ZIP archive.
+
+Successful access to the protected archive confirmed that the recovered password was valid for the exercise.
+
+#### 3.6 Project Workflow Summary
+
+The practical workflow followed these stages:
+
+1. Obtain the instructor-provided password-protected ZIP archive.
+2. Use a hash-extraction service to obtain its password-verification data.
+3. Use Johnny's graphical interface to perform the password-recovery exercise with John the Ripper.
+4. Obtain the recovered password.
+5. Test the recovered password against the original ZIP archive.
+6. Confirm successful access and capture the required assignment evidence.
+
+**Workflow:** ZIP archive → Hash extraction → Johnny / John the Ripper → Password recovery → ZIP archive verification.
+
+
+### 4. Practical Methodology
+
+This section documents the practical stages followed during the authorized password-recovery exercise using the instructor-provided ZIP archive, a hash-extraction service, and Johnny's graphical interface.
+
+#### 4.1 Obtaining the Test File
+
+The exercise began with the instructor-provided password-protected ZIP archive.
+
+The archive served as the authorized test file for the password-recovery activity.
+
+#### 4.2 Extracting the File Hash
+
+A hash-extraction service was used to extract the password-verification data associated with the ZIP archive.
+
+This stage was necessary to obtain the hash required for the subsequent John the Ripper exercise.
+
+#### 4.3 Saving the Extracted Hash
+
+After extraction, the resulting hash was copied into a text file using Windows Notepad.
+
+The text file was saved for use during the Johnny password-recovery exercise.
+
+#### 4.4 Loading the Hash into Johnny
+
+Johnny was opened on the Windows system, and the saved hash file was provided to the application.
+
+Johnny served as the graphical interface for the John the Ripper engine during the exercise.
+
+#### 4.5 Password-Recovery Exercise
+
+The password-recovery process was initiated through Johnny's graphical interface.
+
+The application processed the supplied hash as part of the authorized exercise until a password candidate was identified.
+
+#### 4.6 Viewing the Recovered Password
+
+After the recovery process completed successfully, the recovered password was displayed through the application.
+
+The password itself is intentionally excluded from this public documentation to avoid exposing sensitive information.
+
+#### 4.7 Verifying the Recovery Result
+
+The recovered password was used to open the original instructor-provided ZIP archive.
+
+Successful access confirmed that the recovered password was valid for the supplied test file.
+
+#### 4.8 Methodology Summary
+
+The practical exercise followed this sequence:
+
+**ZIP archive → Hash extraction → Notepad hash file → Johnny GUI → Password recovery → Password verification**
+
+The process provided practical experience with hash extraction, graphical password-auditing tools, result verification, and evidence collection.
